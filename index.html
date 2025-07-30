@@ -63,9 +63,10 @@
           displayPage(page);
           // getPageContent(page, original);
 
-          // document.querySelector("#loader").style.display = "none";
+          
           document.querySelector("#orgi").value = original;
           document.querySelector("#page").value = page;
+          document.querySelector("#gloader").style.display = "none";
           //sessionStorage.setItem("m", mg)
           //sessionStorage.setItem("m", mg);
           //sessionStorage.setItem("original", JSON.parse(v).original);
@@ -510,8 +511,8 @@
         margin: 0;
         box-sizing: border-box;
       }
-      #loader {
-        display: none;
+      #gloader {
+        display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -611,7 +612,7 @@
         }
       }
     </style>
-    <div id="loader">
+    <div id="gloader">
       <div class="lds-ellipsis">
         <div></div>
         <div></div>
